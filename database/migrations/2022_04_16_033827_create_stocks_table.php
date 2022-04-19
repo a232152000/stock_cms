@@ -24,6 +24,8 @@ return new class extends Migration
             $table->float('h', 7, 3)->comment('最高');
             $table->float('l', 7, 3)->comment('最低');
             $table->float('y', 7, 3)->comment('昨收');
+            $table->timestamp('final_at', $precision = 0)->nullable();
+
             $table->timestamps();
 
 //            $table->primary('id');
